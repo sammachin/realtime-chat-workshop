@@ -1,0 +1,41 @@
+baseURL = "https://signalr.thebeebs.net"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "SignalR"
+theme = "learn"
+uglyurls = true
+googleAnalytics = "UA-23323-1"
+sectionPagesMenu = "main"
+pygmentsCodeFences = true
+
+[blackfriday]
+hrefTargetBlank = true
+
+[params]
+themeVariant = "mine"
+showVisitedLinks = false
+author = "Martin Beeby"
+description = "SignalR / ECS"
+disableSearch = false
+disableAssetsBusting = false
+disableLanguageSwitchingButton = true
+disableShortcutsTitle=true
+
+
+# [menu]
+#   [[menu.main]]
+#     identifier = "Prerequisites"
+#     name = "This is the Mu track"
+#     title = "Workshop using Mu"
+#     url = "/mu/"
+#     weight = -110
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-twitter fa-lg'></i> @thebeebs"
+identifier = "tw"
+url = "https://twitter.com/intent/user?screen_name=thebeebs"
+weight = 1
+
+[outputs]
+home = [ "HTML", "AMP", "RSS", "JSON"]
+page = [ "HTML", "AMP"]
