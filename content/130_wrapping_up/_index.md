@@ -1,6 +1,6 @@
 +++
 title = "Wrapping Up"
-chapter = true
+chapter = false
 weight = 130
 +++
 

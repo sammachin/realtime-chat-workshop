@@ -1,9 +1,7 @@
 +++
 title = "Build Our App"
-chapter = true
+chapter = false
 weight = 30
 +++
 
 # Building
-
-{{% children showhidden="false" %}}

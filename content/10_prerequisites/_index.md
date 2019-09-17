@@ -1,5 +1,5 @@
 +++
-title = "Create an AWS account"
+title = "Prerequisites"
 chapter = false
 weight = 1
 +++

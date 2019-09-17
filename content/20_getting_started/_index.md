@@ -1,9 +1,8 @@
 +++
 title = "Getting Started"
-chapter = true
+chapter = false
 weight = 20
 +++
 
 # Getting Started
 
-{{% children showhidden="false" %}}

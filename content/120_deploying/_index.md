@@ -1,6 +1,6 @@
 +++
 title = "Publishing Our App"
-chapter = true
+chapter = false
 weight = 120
 +++
 
