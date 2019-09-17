@@ -1,7 +1,7 @@
 +++
 title = "Publishing Our App"
 chapter = false
-weight = 120
+weight = 5
 +++
 
 Download the Chat application from here:

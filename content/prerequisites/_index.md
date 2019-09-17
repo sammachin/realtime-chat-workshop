@@ -1,7 +1,7 @@
 +++
 title = "Prerequisites"
 chapter = false
-weight = 1
+weight = 2
 +++
 
 {{% notice warning %}}

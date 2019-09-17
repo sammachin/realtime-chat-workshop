@@ -1,7 +1,7 @@
 +++
 title = "Wrapping Up"
 chapter = false
-weight = 130
+weight = 6
 +++
 
 Not bad for a few hours of work! 
