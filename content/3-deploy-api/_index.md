@@ -3,7 +3,8 @@ title = "Deploy the WebSocket API"
 chapter = false
 weight = 4
 +++
-he next step is to <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-deploy-api-with-console.html" target="_blank" rel="noopener">deploy the WebSocket API</a>. Because it’s the first time that you’re deploying the API, create a stage, such as “dev,” and give a sample description.
+
+The next step is to <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-deploy-api-with-console.html" target="_blank" rel="noopener">deploy the WebSocket API</a>. Because it’s the first time that you’re deploying the API, create a stage, such as “dev,” and give a sample description.
 
 The <strong>Stage editor</strong> screen displays all the information for managing your WebSocket API, such as <strong>Settings</strong>, <strong>Logs/Tracing</strong>, <strong>Stage Variables</strong>, and <strong>Deployment History</strong>. Also, make sure that you check your limits and <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html?icmpid=docs_apigateway_console" target="_blank" rel="noopener">read more about API Gateway throttling</a>.
 Make sure that you monitor your tests using the dashboard available for your newly created WebSocket API.
