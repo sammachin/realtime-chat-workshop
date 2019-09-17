@@ -4,5 +4,4 @@ chapter = false
 weight = 20
 +++
 
-# Getting Started
 

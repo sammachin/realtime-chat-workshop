@@ -4,8 +4,6 @@ chapter = false
 weight = 120
 +++
 
-# Publishing Our App
-
 Download the Chat application from here:
 
 https://github.com/thebeebs/chat-application/archive/master.zip
