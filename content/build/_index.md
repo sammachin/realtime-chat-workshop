@@ -21,7 +21,7 @@ Here’s an overview of the real-time chat application:
 
 The application is composed of the WebSocket API in API Gateway that handles the connectivity between the client and servers (1). Two <a href="https://aws.amazon.com/lambda/" target="_blank" rel="noopener">AWS Lambda</a> functions react when clients connect (2) or disconnect (5) from the API. The sendMessage function (3) is invoked when the clients send messages to the server. The server sends the message to all connected clients (4) using the new API Gateway Management API. To track each of the connected clients, use a DynamoDB table to persist the connection identifiers.
 
-To help you see this in action more quickly, I’ve provided a <a href="https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:729047367331:applications~simple-websockets-chat-app">simple-websocket-chat-app</a> in the AWS Serverless Application Repository (SAR) that you can easily deploy (that includes the Lambda functions, DynamoDB table definition, and IAM roles). In addition, the same app is available in AWS SAM application in the&nbsp;<a href="https://github.com/aws-samples/simple-websockets-chat-app">GitHub</a>&nbsp;repo.
+
 
 <h3>Create a new WebSocket API</h3> 
        <ol> 
