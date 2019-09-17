@@ -1,7 +1,7 @@
-baseURL = "https://signalr.thebeebs.net"
+baseURL = "https://realtimechat.thebeebs.net/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "SignalR"
+title = "Chat"
 theme = "learn"
 uglyurls = true
 googleAnalytics = "UA-1064102-5"
