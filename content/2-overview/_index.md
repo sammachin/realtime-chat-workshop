@@ -14,9 +14,7 @@ weight = 2
     
 Here’s an overview of the real-time chat application:
 
-       <div id="attachment_5799" style="width: 757px" class="wp-caption aligncenter"> 
-        <img class="wp-image-5799 size-full" src="https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2018/12/18/websockets-arch.png" alt="" width="747" height="429"> 
-        <p class="wp-caption-text">A serverless real-time chat application using WebSocket API on Amazon API Gateway</p> 
-       </div> 
+<div id="attachment_5799" style="width: 757px" class="wp-caption aligncenter"> 
+<img class="wp-image-5799 size-full" src="https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2018/12/18/websockets-arch.png" alt="" width="747" height="429"> 
 
 The application is composed of the WebSocket API in API Gateway that handles the connectivity between the client and servers (1). Two <a href="https://aws.amazon.com/lambda/" target="_blank" rel="noopener">AWS Lambda</a> functions react when clients connect (2) or disconnect (5) from the API. The sendMessage function (3) is invoked when the clients send messages to the server. The server sends the message to all connected clients (4) using the new API Gateway Management API. To track each of the connected clients, use a DynamoDB table to persist the connection identifiers.
