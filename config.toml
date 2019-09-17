@@ -15,20 +15,11 @@ hrefTargetBlank = true
 themeVariant = "mine"
 showVisitedLinks = false
 author = "Martin Beeby"
-description = "SignalR / ECS"
+description = "Realtime Chat"
 disableSearch = false
 disableAssetsBusting = false
 disableLanguageSwitchingButton = true
 disableShortcutsTitle=true
-
-
-# [menu]
-#   [[menu.main]]
-#     identifier = "Prerequisites"
-#     name = "This is the Mu track"
-#     title = "Workshop using Mu"
-#     url = "/mu/"
-#     weight = -110
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-twitter fa-lg'></i> @thebeebs"
