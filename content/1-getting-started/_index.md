@@ -1,9 +1,12 @@
 +++
 title = "Getting Started"
 chapter = false
-weight = 3
+weight = 1
 +++
 
+
+You will need an AWS account **If you don't already have an AWS account with Administrator access**: [create
+one now](https://aws.amazon.com/getting-started/)
        
 You can build bidirectional communication applications using WebSocket APIs in <a href="https://aws.amazon.com/api-gateway/" target="_blank" rel="noopener">Amazon API Gateway</a> without having to provision and manage any servers.
 

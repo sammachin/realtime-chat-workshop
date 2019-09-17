@@ -1,7 +1,7 @@
 +++
 title = "Wrapping Up"
 chapter = false
-weight = 6
+weight = 7
 +++
 In this tutorial, we showed how to use WebSocket APIs in API Gateway, including a message exchange between client and server using routes and the route selection expression. 
 
