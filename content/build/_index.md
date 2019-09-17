@@ -122,8 +122,4 @@ connected <span class="token punctuation">(</span>press CTRL<span class="token o
        </ol> 
        <p>If you run wscat in multiple consoles, each will receive the “hello world”.</p> 
        <p>You’re now ready to send messages and get responses back and forth from your WebSocket API!</p> 
-       <h2>Conclusion</h2> 
-       <p>In this post, I showed you how to use WebSocket APIs in API Gateway, including a message exchange between client and server using routes and the route selection expression. You used Lambda and DynamoDB to create a serverless real-time chat application. While this post only scratched the surface of what is possible, you did all of this without needing to manage any servers at all.</p> 
-       <p>You can get started today by creating your own WebSocket APIs in API Gateway. To learn more, see the <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html" target="_blank" rel="noopener">Amazon API Gateway Developer Guide</a>. You can also watch the <a href="https://www.youtube.com/watch?v=3SCdzzD0PdQ" target="_blank" rel="noopener">Building Real-Time Applications using WebSocket APIs Supported by Amazon API Gateway webinar</a> hosted by George Mao.</p> 
-       <p>I’m excited to see what new applications come up with your use of the new WebSocket API. I welcome any feedback here, in the AWS forums, or on Twitter.</p> 
-       <p>Happy coding!</p> 
+       
