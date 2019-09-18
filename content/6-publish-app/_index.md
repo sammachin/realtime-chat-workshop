@@ -1,16 +1,14 @@
 +++
-title = "Publishing Our App"
+title = "Build you own App"
 chapter = false
 weight = 6
 +++
 
-Download the Chat application from here:
+You can download the sample chat app from here:
 
-https://github.com/thebeebs/chat-application/archive/master.zip
+https://github.com/thebeebs/chat-application/
 
-Extract the zip folder and modify the websocket URL inside of index.js to point to the URL that you created in previous steps. 
-
-Now Zip up the three files. We will Upload this to Amplify Console to host this website.
+Take a look at how the app connect to the WebSocketUrl inside the file index.js.
 
 
 

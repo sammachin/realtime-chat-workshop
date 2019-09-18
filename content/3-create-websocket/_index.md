@@ -1,16 +1,15 @@
 +++
-title = "Create a new WebSocket API"
+title = "Look at WebSocket API"
 chapter = false
 weight = 3
 +++
 
 <ol> 
-<li>In the API Gateway console, choose <strong>Create API, New API</strong>.</li> 
-<li>Under <strong>Choose the protocol</strong>, choose <strong>WebSocket</strong>.</li> 
-<li>For <strong>API name</strong>, enter <strong>My Chat API</strong>.</li> 
-<li>For <strong>Route Selection Expression</strong>, enter <strong>$request.body.action</strong>.</li> 
-<li>Enter a description if you’d like and click <strong>Create API</strong>.</li> 
-</ol> 
+<li>In the API Gateway console, you should find a Gateway that has been created. 
+
+If you look at the routes, you will notice that the $connect, $disconnect and the sendmessage routes have been connected to lambda functions.
+
+The route selection expretion is set to $request.body.message
 
 The attribute described by the <strong>Route Selection Expression</strong> value should be present in every message that a client sends to the API. Here’s one example of a request message:
 
@@ -23,18 +22,7 @@ The attribute described by the <strong>Route Selection Expression</strong> value
 
 To route messages based on the message content, the WebSocket API expects JSON-formatted messages with a property serving as a routing key.
 
-### Manage routes
-
-Now, configure your new API to respond to incoming requests. For this app, create three routes as described earlier. First, configure the <strong>sendmessage</strong> route with a Lambda integration.
-
-<ol> 
-<li>In the API Gateway console, under <strong>My Chat API</strong>, choose <strong>Routes</strong>.</li> 
-<li>For <strong>New Route Key</strong>, enter <strong>sendmessage</strong> and confirm it.</li> 
-</ol> 
-
-Each route includes route-specific information such as its model schemas, as well as a reference to its target integration. With the <strong>sendmessage</strong> route created, <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html" target="_blank" rel="noopener">use a Lambda function as an integration</a> that is responsible for sending messages.
-
-At this point, you’ve either deployed the AWS Serverless Application Repository backend or deployed it yourself using AWS SAM. In the Lambda console, look at the sendMessage function. This function receives the data sent by one of the clients, looks up all the currently connected clients, and sends the provided data to each of them. Here’s a snippet from the Lambda function:
+In the Lambda console, look at the sendMessage function. This function receives the data sent by one of the clients, looks up all the currently connected clients, and sends the provided data to each of them. Here’s a snippet from the Lambda function:
 
 ```
 DDB.scan(scanParams, function (err, data) {
@@ -111,5 +99,3 @@ if (err.statusCode === 410) {
 ```
 
 API Gateway returns a status of 410 GONE when the connection is no longer available. If this happens, delete the identifier from the DynamoDB table.
-
-To make calls to your connected clients, your application needs a new permission: “execute-api:ManageConnections”. This is handled for you in the AWS SAM template.

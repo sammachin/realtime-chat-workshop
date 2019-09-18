@@ -1,7 +1,7 @@
 +++
 title = "Overview"
 chapter = false
-weight = 2
+weight = 1
 +++
 
 <p>To understand how you can use the new WebSocket API feature of API Gateway, I will show you how to build a real-time chat app. To simplify things, assume that there is only a single chat room in this app. Here are the capabilities that the app includes:</p> 

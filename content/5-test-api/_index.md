@@ -4,6 +4,15 @@ chapter = false
 weight = 5
 +++
 
+The easiest way to test that the system is working is to go an visit http://chat.thebeebs.net 
+
+Replace the Websocket URL with the URL that you have created and test send a message.
+
+You’re now ready to send messages and get responses back and forth from your WebSocket API!
+
+
+## Alternative way to test
+
 To test the WebSocket API, you can use <a href="https://github.com/websockets/wscat" target="_blank" rel="noopener">wscat</a>, an open-source, command line tool.
 
 <a href="https://www.npmjs.com/get-npm" target="_blank" rel="noopener">Install NPM</a>.
@@ -25,7 +34,7 @@ To test the sendMessage function, send a JSON message like the following example
 ```
 wscat -c wss://{YOUR-API-ID}.execute-api.{YOUR-REGION}.amazonaws.com/dev
 connected (press CTRL+C to quit)
-> {"action":"sendmessage", "data":"hello world"}
+> {"message":"sendmessage", "data":"hello world"}
 < hello world
 ```
 

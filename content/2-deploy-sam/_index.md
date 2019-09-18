@@ -4,7 +4,7 @@ chapter = false
 weight = 2
 +++
 
-To help you deploy more quickly, we have provided a <a href="https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:729047367331:applications~simple-websockets-chat-app">simple-websocket-chat-app</a> in the AWS Serverless Application Repository (SAR) that you can easily deploy (that includes the Lambda functions, DynamoDB table definition, and IAM roles). 
+To help you deploy more quickly, I have provided a <a href="https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:365489315573:applications~realtime-chatapp">sample backend</a> in the AWS Serverless Application Repository (SAR) that you can easily deploy (that includes the Lambda functions, DynamoDB table definition, API Gateway and IAM roles). 
 
 Visit the application above and press the **deploy** button. 
 
