@@ -9,7 +9,7 @@ weight = 3
 
 If you look at the routes, you will notice that the $connect, $disconnect and the sendmessage routes have been connected to lambda functions.
 
-The route selection expretion is set to $request.body.message
+The <strong>Route Selection Expression</strong> is set to $request.body.message
 
 The attribute described by the <strong>Route Selection Expression</strong> value should be present in every message that a client sends to the API. Here’s one example of a request message:
 
